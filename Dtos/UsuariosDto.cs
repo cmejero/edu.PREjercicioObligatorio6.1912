@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace edu.EjercicioObligatorio6._1912.Dtos
 {
+    /// <summary>
+    /// Clase que se encarga de la de los campos de nuestros usuarios.
+    /// <author>CMR - 16-01-2024</author>
+    /// </summary>
     internal class UsuariosDto
     {
         long idCliente;

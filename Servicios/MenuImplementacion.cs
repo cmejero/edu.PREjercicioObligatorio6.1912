@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace edu.EjercicioObligatorio6._1912.Servicios
 {
+    /// <summary>
+    /// Implementación de la interfaz
+    /// <author>CMR - 16-01-2024</author>
+    /// </summary>
     internal class MenuImplementacion : MenuInterfaz
     {
+
         public int menuYSeleccion()
         {
             int opcionSeleccionada;

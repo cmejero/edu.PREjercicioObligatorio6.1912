@@ -5,8 +5,17 @@ using System.Collections.Generic;
 
 namespace edu.EjercicioObligatorio6._1912.Controladores
 {
+    /// <summary>
+    /// Clase principal de la aplicación
+    /// <author>CMR - 16-01-2024</author>
+    /// </summary>
     internal class Program
     {
+        /// <summary>
+        /// Metodo de entrada a la aplicación
+        /// <author>CMR - 16-01-2024</author>
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
             MenuInterfaz mi = new MenuImplementacion(); 

@@ -8,12 +8,22 @@ using System.Threading.Tasks;
 
 namespace edu.EjercicioObligatorio6._1912.Servicios
 {
+    /// <summary>
+    ///  Implementacion la operativaInterfaz
+    ///  <author>CMR - 16-01-2024</author>
+    /// </summary>
     internal class OperacionImplementacion : OperacionInterfaz
     {
         public void agregarUsuario(List<UsuariosDto> listaAntigua)
         {
             listaAntigua.Add(crearUsuario());
         }
+
+        /// <summary>
+        /// Metodo que se encarga de crear/rellenar los campos necesarios
+        /// <author>CMR - 16-01-2024</author>
+        /// </summary>
+        /// <returns></returns>
         private UsuariosDto crearUsuario()
         {
             Console.WriteLine("Introduzca un id");
