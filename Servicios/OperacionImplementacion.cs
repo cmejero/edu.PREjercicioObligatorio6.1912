@@ -51,11 +51,12 @@ namespace edu.EjercicioObligatorio6._1912.Servicios
 
                     Console.WriteLine("NOMBRE CLIENTE: " + listaAntigua[i].NombreCompletoCliente + " " + "EDAD CLIENTE: " + listaAntigua[i].Edad);
                 }
+
                 Console.WriteLine("USUARIOS DE LA LISTA ORDENADOS DESCENDENTEMENTE POR EDAD");
 
                 for (int i = 0; i < listaAntigua.Count - 1; i++)
                 {
-                    for (int j = 0; j <= listaAntigua.Count - 1 - i; j++)
+                    for (int j = 0; j < listaAntigua.Count - 1 - i; j++)
                     {
                         if (listaAntigua[j].Edad > listaAntigua[j + 1].Edad)
                         {
