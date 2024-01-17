@@ -45,11 +45,17 @@ namespace edu.EjercicioObligatorio6._1912.Servicios
         {
             if (listaAntigua.Count >= 3)
             {
-                Console.WriteLine("nombre usuario " + listaAntigua.NombreCompletoCliente + "edad " listaAntigua.Edad);
-
-                for (int i = 0; i < listaAntigua - 1; i++)
+                Console.WriteLine("USUARIOS INTRODUCIDOS EN LA LISTA");
+                for (int i = 0; i < listaAntigua.Count; i++)
                 {
-                    for (int j = 0; j < listaAntigua - 1 - i; j++)
+
+                    Console.WriteLine("NOMBRE CLIENTE: " + listaAntigua[i].NombreCompletoCliente + " " + "EDAD CLIENTE: " + listaAntigua[i].Edad);
+                }
+                Console.WriteLine("USUARIOS DE LA LISTA ORDENADOS DESCENDENTEMENTE POR EDAD");
+
+                for (int i = 0; i < listaAntigua.Count - 1; i++)
+                {
+                    for (int j = 0; j <= listaAntigua.Count - 1 - i; j++)
                     {
                         if (listaAntigua[j].Edad > listaAntigua[j + 1].Edad)
                         {
@@ -57,21 +63,31 @@ namespace edu.EjercicioObligatorio6._1912.Servicios
                                 UsuariosDto aux = listaAntigua[j];
                                 listaAntigua[j] = listaAntigua[j + 1];
                                 listaAntigua[j + 1] = aux;
+
+
                             }
+
                         }
                     }
                 }
-                Console.WriteLine("nombre usuario " + listaAntigua.NombreCompletoCliente + "edad " listaAntigua.Edad)
+                for (int v = 0; v < listaAntigua.Count; v++)
+                {
+                    Console.WriteLine("NOMBRE CLIENTE: " + listaAntigua[v].NombreCompletoCliente + " " + "EDAD CLIENTE: " + listaAntigua[v].Edad);
+                }
+
+
             }
+
+
             else
             {
-                Console.WriteLine("Son necesarios más clientes");
+                Console.WriteLine("SON NECESARIOS AL MENOS 3 CLIENTES PARA REALIZAR ESTA ACCIÓN");
             }
+
+
+            
+
         }
-
-
-
-
 
     }
 }

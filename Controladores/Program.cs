@@ -22,7 +22,7 @@ namespace edu.EjercicioObligatorio6._1912.Controladores
             OperacionInterfaz oi = new OperacionImplementacion();
 
             List<UsuariosDto> listaUsuario = new List<UsuariosDto>();
-            
+           
 
             int opcionUsuario;
             bool cerrarMenu = false;

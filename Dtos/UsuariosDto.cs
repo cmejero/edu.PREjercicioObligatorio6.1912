@@ -23,7 +23,7 @@ namespace edu.EjercicioObligatorio6._1912.Dtos
             this.idCliente = idCliente;
             this.nombreCliente = nombreCliente;
             this.apellidosCliente = apellidosCliente;
-            this.nombreCompletoCliente = nombreCliente + apellidosCliente;
+            this.nombreCompletoCliente = nombreCliente + " " + apellidosCliente;
             this.edad = edad;
         }
 
